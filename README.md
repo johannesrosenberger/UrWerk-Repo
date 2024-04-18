@@ -1,4 +1,6 @@
 # UrWerk-Repo
+The repository contains partial results of the pilot project "UrWerk", the aim of which was to develop a framework for customised material data spaces that map the complex history of materials in the form of a network graph. 
+
 ![Data mapping and integration workflow applied in the use case 100Cr6 process history by combination of several software tools, connected by the scripts of GDTool](https://github.com/johannesrosenberger/UrWerk-Repo/blob/main/supplementary_material/data_mapping_and_integration_workflow.png?raw=true)
 
 The EMMO domain ontology module Mechanical Testing, including our class definitions for both use cases, is published in the EMMO Repo at GitHub (https://github.com/emmo-repo/domain-mechanical-testing). Its current version 0.9.0 is based on EMMO version 1.0.0-alpha2.
