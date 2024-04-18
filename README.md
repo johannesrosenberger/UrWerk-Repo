@@ -9,11 +9,17 @@ There are different licenses for each folder:
 
 ## Citing UrWerk-Repo
 Sascha Fliegener, Johannes Rosenberger, Michael Luke, José Manuel Domínguez, Joana Francisco Morgado, Hans-Ulrich Kobialka, Torsten Kraft, Johannes Tlatlik
+
 Digital methods for the lifetime assessment of engineering steels
+
 Advanced Engineering Materials Volume... Issue...
+
 Special Issue Digitalization in Materials Science and Engineering
+
 2024
+
 pages...
+
 DOI...
 
 ## Plattform Material Digital
