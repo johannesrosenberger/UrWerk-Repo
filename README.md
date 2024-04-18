@@ -7,7 +7,7 @@ There are different licenses for each folder:
 - "data_knowledge_graph" and "supplementary_material" are published under CC-BY-SA-4.0.
 - "code" is published under MIT License.
 
-## Citing UrWerk-Repo
+## Citation
 Sascha Fliegener, Johannes Rosenberger, Michael Luke, José Manuel Domínguez, Joana Francisco Morgado, Hans-Ulrich Kobialka, Torsten Kraft, Johannes Tlatlik
 
 Digital methods for the lifetime assessment of engineering steels
