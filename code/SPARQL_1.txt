@@ -1,0 +1,39 @@
+# Select all testing series with a fatigue strength (?fat) > 800 MPa
+
+SELECT ?series_label ?short_name_label ?fat WHERE {{
+
+  # SERIES
+  ?series rdf:type <{mechanical.Series.iri}> .
+  OPTIONAL {{
+    ?series_id rdf:type <{mechanical.SeriesID.iri}> .
+    ?series <{semiotics.hasSign.iri}> ?series_id .
+    ?series_id <{perceptual.hasSymbolData.iri}> ?series_label .
+  }}
+  
+  # SHORT NAME
+  OPTIONAL {{
+    ?short_name rdf:type <{mechanical.ShortName.iri}> .
+    ?series <{reductionistic.hasSpatialDirectPart.iri}> ?short_name .
+    OPTIONAL {{
+      ?short_name <{perceptual.hasSymbolData.iri}> ?short_name_label .
+    }}
+  }}  
+  
+  # FATIGUE STRENGTH
+  OPTIONAL {{
+      ?fatiguestrength rdf:type <{mechanical.FatigueStrength.iri}> .
+      ?series <{physical.hasSpatialPart.iri}> ?fatiguestrength .
+      ?fatiguestrength <{metrology.hasQuantityValue.iri}>/<{math.hasNumericalData.iri}> ?fat_str .
+  }}
+  
+  }}    
+  
+  BIND( xsd:float (?fat_str) AS ?fat )
+  
+  # FILTER series with a fatigue strength > 800 MPa
+  
+  FILTER (?fat > 800).
+  
+}} ORDER BY DESC(?fat)
+
+

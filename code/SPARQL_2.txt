@@ -1,0 +1,29 @@
+# Select all NotchedSpecimen and retrieve their k_t values
+
+SELECT ?specimen_label ?series_label ?short_name_label ?kt WHERE {{
+
+  # SPECIMEN
+  ?specimen rdf:type <{mechanical.MechanicalTestingSpecimen.iri}> .
+  ###
+  ###
+  # Select only notched specimens
+  ###
+  ###
+  ?specimen rdf:type <{mechanical.NotchedSpecimen.iri}> .
+  ###
+  ###
+  # Get Kt value
+  OPTIONAL {{
+      ?specimen <{properties.hasProperty.iri}> ?stress_concentration_factor .
+      ?stress_concentration_factor rdf:type <{mechanical.StressConcentrationFactor.iri}> .
+      ?stress_concentration_factor <{metrology.hasQuantityValue.iri}>/<{math.hasNumericalData.iri}> ?kt .
+    }}
+  # Get specimen label
+  OPTIONAL {{
+      ?specimen <{semiotics.hasSign.iri}> ?specimen_id .
+      ?specimen_id rdf:type <{mechanical.SpecimenID.iri}> .
+      ?specimen_id <{perceptual.hasSymbolData.iri}> ?specimen_label . 
+  }}
+   
+}} ORDER BY ( xsd:long (?specimen_label) )
+

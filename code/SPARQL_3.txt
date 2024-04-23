@@ -1,0 +1,60 @@
+# Generic SPARQL query to retrieve connected paths within the knowledge graph of an interconnected process chain
+SELECT ?top_process ?top_process_label ?process ?process_label ?process_type ?parent_process ?predecessor ?predecessor_label ?predecessor_type ?successor ?successor_label
+       ?successor_type ?parameter ?parameter_label ?parameter_value ?parameter_type ?parameter_type_label ?parameter_unit ?parameter_unit_type ?parameter_unit_label
+  WHERE {{
+  # Specific manufacturing/measurement subprocess and "top" process it is part of (whole manufacturing history).
+  {{
+    SELECT DISTINCT ?process ?process_label ?process_type ?top_process ?top_process_label WHERE {{
+      # The process must be a manufacturing or measurement process
+      ?process rdf:type ?process_type .
+      {{ FILTER ( ?process_type = <{manufacturing.Manufacturing.iri}> ) }} UNION {{ ?process_type rdfs:subClassOf+ <{manufacturing.Manufacturing.iri}> . }} UNION
+      {{ FILTER ( ?process_type = <{properties.Measurement.iri}> ) }} UNION {{ ?process_type rdfs:subClassOf+ <{properties.Measurement.iri}> . }}
+    
+      # The process must have a specimen or material either as output or as input 
+      ?process <{mechanical.hasInput.iri}>|^<{mechanical.hasInput.iri}>|<{mechanical.hasOutput.iri}> ?specimen .
+      ?specimen rdf:type/rdfs:subClassOf* <{manufacturing.EngineeredMaterial.iri}> .
+      
+      # It must be possible to navigate backwards to the top process (whole manufacturing history).
+      # The top process serves also as a way to uniquely identify the material being manufactured and characterized.
+      ?process (^<{emmo.hasTemporalNext.iri}>|^<{emmo.hasTemporalFirst.iri}>)* ?top_process .
+      ?top_process rdf:type/rdfs:subClassOf* <{holistic.Process.iri}> .
+      FILTER NOT EXISTS {{ # The top process is not part of another parent process.
+        ?other_process rdf:type/rdfs:subClassOf* <{holistic.Process.iri}> .
+        ?other_process ?predicate ?top_process .
+      }}    
+    }}
+  }}  
+  # Specific parameter from the process 
+  OPTIONAL {{ 
+      # Identify the parameter set the parameter belongs to
+      ?process <{mechanical.hasInput.iri}>|^<{mechanical.hasInput.iri}>|<{mechanical.hasOutput.iri}> ?parameter_set .
+      ?parameter_set rdf:type/rdfs:subClassOf* <{mechanical.ParameterSet.iri}> .
+      
+      # Locate the parameter and get its type, label and values
+      ?parameter_set <{physical.hasSpatialPart.iri}> ?parameter .
+      ?parameter rdf:type ?parameter_rdf_type . 
+      OPTIONAL {{
+        ?parameter skos:prefLabel|rdfs:label ?parameter_label .
+      }}
+      BIND(?parameter_rdf_type as ?parameter_type)
+      OPTIONAL {{
+        ?parameter_rdf_type skos:prefLabel|rdfs:label ?parameter_type_label .
+      }}
+      OPTIONAL {{
+        {{  # Numerical value
+          ?parameter <{metrology.hasQuantityValue.iri}>/<{math.hasNumericalData.iri}> ?parameter_value_str . 
+          BIND( xsd:float (?parameter_value_str) AS ?parameter_value )
+        }} UNION
+        {{  # String value
+          ?parameter <{perceptual.hasSymbolData.iri}> ?parameter_value . 
+        }}
+      }}
+      OPTIONAL {{
+        ?parameter <{metrology.hasReferenceUnit.iri}> ?parameter_unit .
+        ?parameter_unit rdf:type ?parameter_unit_type .
+        OPTIONAL {{
+            ?parameter_unit_type skos:prefLabel|rdfs:label ?parameter_unit_label .
+        }}
+      }}
+  }}  
+}}
