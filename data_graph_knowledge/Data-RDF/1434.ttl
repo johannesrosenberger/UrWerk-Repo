@@ -1,0 +1,2256 @@
+@prefix : <http://emmo.info/emmo/domain/mechanical-testing/fatigue#> .
+@prefix chemistry: <http://emmo.info/emmo/middle/chemistry#> .
+@prefix emmo: <http://emmo.info/emmo#> .
+@prefix holistic: <http://emmo.info/emmo/middle/holistic#> .
+@prefix isq: <http://emmo.info/emmo/middle/isq#> .
+@prefix manufacturing: <http://emmo.info/emmo/middle/manufacturing#> .
+@prefix math: <http://emmo.info/emmo/middle/math#> .
+@prefix mechtesting: <http://emmo.info/emmo/domain/mechanical-testing#> .
+@prefix metrology: <http://emmo.info/emmo/middle/metrology#> .
+@prefix perceptual: <http://emmo.info/emmo/middle/perceptual#> .
+@prefix physical: <http://emmo.info/emmo/top/physical#> .
+@prefix physicalistic: <http://emmo.info/emmo/middle/physicalistic#> .
+@prefix properties: <http://emmo.info/emmo/middle/properties#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reductionistic: <http://emmo.info/emmo/middle/reductionistic#> .
+@prefix semiotics: <http://emmo.info/emmo/middle/semiotics#> .
+@prefix siunits: <http://emmo.info/emmo/middle/siunits#> .
+@prefix units-extension: <http://emmo.info/emmo/middle/units-extension#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Inclusion_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_cc6faafc_5942_4724_9af8_14c2be17a64a ;
+    rdfs:label "Inclusion" ;
+    physical:EMMO_f68030be_94b8_4c61_a161_886468558054 :NMIDistanceFromSurface_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :NMIElements_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1,
+        :NMIElements_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2,
+        :NMIElements_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3,
+        :NMIElements_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4,
+        :NMIElements_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5,
+        :NMIElements_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6,
+        :NMIElements_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7,
+        :NMIElements_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8,
+        :NMIElements_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9,
+        :NMISize_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:Material_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a manufacturing:EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356 ;
+    rdfs:label "Material" ;
+    reductionistic:EMMO_65a2c5b8_e4d8_4a51_b2f8_e55effc0547d :InitialMaterial_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :MaterialAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :MaterialAfterMetallurgy_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :MaterialNumber_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :ShortName_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:NotchRadiusValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "NotchRadiusValue" .
+
+<http://emmo.info/emmo/domain/mechanical-testing/fatigue#Variant+HFS+%28HFS%29_37e9fe6d-2a7e-4f78-9781-867e1ba97713> a holistic:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ;
+    rdfs:label "Variant HFS (HFS)" ;
+    emmo:EMMO_c0f48dc6_4a32_4d9a_a956_d68415954a8e :Fractography_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    emmo:EMMO_fe63194f_7c04_4dbd_a244_524b38b6699b :Metallurgy_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    holistic:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a :FatigueTesting_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :Hardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :Machining_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :Metallurgy_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:AlternatingStrengthStressUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_26707f23_c0f3_462a_91d7_5db51cd14cf4 ;
+    rdfs:label "AlternatingStrengthStressUnit" .
+
+:AlternatingStrengthValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "AlternatingStrengthValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.077969e+03 .
+
+:AlternatingStrength_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_b4d92a5c_5267_46ab_abed_f000b890b9db ;
+    rdfs:label "AlternatingStrength" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :AlternatingStrengthStressUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :AlternatingStrengthValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:AxialResidualStressUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_26707f23_c0f3_462a_91d7_5db51cd14cf4 ;
+    rdfs:label "AxialResidualStressUnit" .
+
+:AxialResidualStressValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "AxialResidualStressValue" .
+
+:AxialResidualStress_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_142c4b97_9011_4608_849b_08d1fdd642ce ;
+    rdfs:label "AxialResidualStress" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :AxialResidualStressUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :AxialResidualStressValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:CEVAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CEVAfterDeoxidizationUnit" .
+
+:CEVAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CEVAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.363e+00 .
+
+:CEVAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_bcfa65e9_ddf4_4a16_81ff_b02ae29c0a27 ;
+    rdfs:label "CEVAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CEVAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CEVAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:CEVAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CEVAfterHardeningUnit" .
+
+:CEVAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CEVAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.363e+00 .
+
+:CEVAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_bcfa65e9_ddf4_4a16_81ff_b02ae29c0a27 ;
+    rdfs:label "CEVAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CEVAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CEVAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:ChemicalCompositionAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a chemistry:EMMO_7efd64d1_05a1_49cd_a7f0_783ca050d4f3 ;
+    rdfs:label "ChemicalCompositionAfterDeoxidization" ;
+    physical:EMMO_f68030be_94b8_4c61_a161_886468558054 :CEVAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8,
+        :CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Ag"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Cu"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "H"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Mg"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Mn"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Mo"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "N"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Nb"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Ni"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "O"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "P"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Al"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Pb"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "S"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Si"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Sn"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Sr"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Ti"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "V"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Zn"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Zr"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Fe"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "As"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "B"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Be"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "C"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Ca"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Co"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterDeoxidizationChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Cr"^^xsd:string .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterDeoxidizationUnit" .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 2e-01 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 2.8e-01 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 4.3e-02 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.1e-02 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.4e-01 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 7.5e-04 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.2e-02 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 2.5e-02 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 5e-03 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 2.4e-01 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1e-03 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 6e-03 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 9.664515e+01 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1e-04 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.001e+00 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterDeoxidizationValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.39e+00 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 .
+
+:CompositionElementAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterDeoxidization" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterDeoxidizationUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterDeoxidizationValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterDeoxidizationChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Ag"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Cu"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "H"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Mg"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Mn"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Mo"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "N"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Nb"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Ni"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "O"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "P"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Al"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Pb"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "S"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Si"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Sn"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Sr"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Ti"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "V"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Zn"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Zr"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Fe"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "As"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "B"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Be"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "C"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Ca"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Co"^^xsd:string .
+
+:CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "CompositionElementAfterHardeningChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Cr"^^xsd:string .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "CompositionElementAfterHardeningUnit" .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 2e-01 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 2.8e-01 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 4.3e-02 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.1e-02 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.4e-01 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 7.5e-04 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.2e-02 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 2.5e-02 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 5e-03 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 2.4e-01 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1e-03 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 6e-03 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 9.664515e+01 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1e-04 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.001e+00 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CompositionElementAfterHardeningValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.39e+00 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 .
+
+:CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "CompositionElementAfterHardening" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :CompositionElementAfterHardeningUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CompositionElementAfterHardeningValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :CompositionElementAfterHardeningChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 .
+
+:CycleLimitValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "CycleLimitValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 5.000014e+06 .
+
+:CycleLimit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_46d03bc9_dc95_4fa3_82e5_25b499393275 ;
+    rdfs:label "CycleLimit" ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :CycleLimitValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:DiameterUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_959181b4_1765_4fee_8ca7_139d4728b2a5 ;
+    rdfs:label "DiameterUnit" .
+
+:DiameterValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "DiameterValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 5e-01 .
+
+:Diameter_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_5dc819b6_0173_41ab_84b4_f4cc73a10a29 ;
+    rdfs:label "Diameter" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :DiameterUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :DiameterValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:FatigueStrengthStressUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_26707f23_c0f3_462a_91d7_5db51cd14cf4 ;
+    rdfs:label "FatigueStrengthStressUnit" .
+
+:FatigueStrengthValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "FatigueStrengthValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 6.53889e+02 .
+
+:FatigueStrength_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_af7886a4_c996_469b_a0ed_23bb31448a19 ;
+    rdfs:label "FatigueStrength" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :FatigueStrengthStressUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :FatigueStrengthValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:FatigueTestResult_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_3fe87ba8_b79f_4c33_ad30_bf81eaaee46b ;
+    rdfs:label "FatigueTestResult" ;
+    mechtesting:EMMO_474a5489_aad9_418c_9aef_e3873017c43b false ;
+    properties:EMMO_e1097637_70d2_4895_973f_2396f04fa204 :NumberOfLoadCycles_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:Featureless_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_8e789c90_a34a_425a_a685_36865e342c82 ;
+    rdfs:label "Featureless" .
+
+:FlatSpecimen_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_bd8e17c8_167a_4c72_b4ab_e8b2f69034f1 ;
+    rdfs:label "FlatSpecimen" .
+
+:FractographyResults_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_c0b46f83_fd24_420e_8cda_642fb7bf3e49 ;
+    rdfs:label "FractographyResults" ;
+    physical:EMMO_f68030be_94b8_4c61_a161_886468558054 :AxialResidualStress_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :Featureless_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :SurfaceFailure_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :TangentialResidualStress_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:FractureStrainUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_ac324c09_8830_4b04_bda5_8646a8dee0d4 ;
+    rdfs:label "FractureStrainUnit" .
+
+:FractureStrainValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "FractureStrainValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 4.2e+00 .
+
+:FractureStrain_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_2aa65ba7_afb2_4deb_b566_3e2c25a89feb ;
+    rdfs:label "FractureStrain" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :FractureStrainUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :FractureStrainValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:FrequencyUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a siunits:EMMO_e75f580e_52bf_4dd5_af70_df409cec08fd ;
+    rdfs:label "FrequencyUnit" .
+
+:FrequencyValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "FrequencyValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 3e+01 .
+
+:InitialCEVUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCEVUnit" .
+
+:InitialCEVValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCEVValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.363e+00 .
+
+:InitialCEV_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_bcfa65e9_ddf4_4a16_81ff_b02ae29c0a27 ;
+    rdfs:label "InitialCEV" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCEVUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCEVValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:InitialChemicalComposition_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a chemistry:EMMO_7efd64d1_05a1_49cd_a7f0_783ca050d4f3 ;
+    rdfs:label "InitialChemicalComposition" ;
+    physical:EMMO_f68030be_94b8_4c61_a161_886468558054 :InitialCEV_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8,
+        :InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Ag"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Cu"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "H"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Mg"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Mn"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Mo"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "N"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Nb"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Ni"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "O"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "P"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Al"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Pb"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "S"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Si"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Sn"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Sr"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Ti"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "V"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Zn"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Zr"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Fe"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "As"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "B"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Be"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "C"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Ca"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Co"^^xsd:string .
+
+:InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "InitialCompositionElementChemicalSymbol" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Cr"^^xsd:string .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 a mechtesting:EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f ;
+    rdfs:label "InitialCompositionElementUnit" .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 2e-01 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 2.8e-01 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 4.3e-02 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.1e-02 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.4e-01 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 7.5e-04 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.2e-02 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 2.5e-02 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 5e-03 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 2.4e-01 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1e-03 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 6e-03 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 9.664515e+01 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1e-04 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.001e+00 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 0e+00 .
+
+:InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "InitialCompositionElementValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.39e+00 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 .
+
+:InitialCompositionElement_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 a chemistry:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
+    rdfs:label "InitialCompositionElement" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :InitialCompositionElementUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :InitialCompositionElementValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :InitialCompositionElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 .
+
+:KneePointUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_0527f1f8_41d4_4414_b1fa_8afbc8651ecb ;
+    rdfs:label "KneePointUnit" .
+
+:KneePointValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "KneePointValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.15077e+05 .
+
+:KneePoint_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_d7744a44_6cfe_47cd_9e10_9ec3be7f8d0c ;
+    rdfs:label "KneePoint" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :KneePointUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :KneePointValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:LoadingType_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_37824926_963f_4e3d_ac3c_7c323e969ff6 ;
+    rdfs:label "LoadingType" ;
+    reductionistic:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe :TensionCompression_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:MartensiticMicrostructure_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_a579af48_7803_4f5f_8f5f_ae1198b3eb85 ;
+    rdfs:label "MartensiticMicrostructure" .
+
+:MaxStressUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_26707f23_c0f3_462a_91d7_5db51cd14cf4 ;
+    rdfs:label "MaxStressUnit" .
+
+:MaxStressValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "MaxStressValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.666667e+03 .
+
+:MeanStressFactorUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a isq:EMMO_a66427d1_9932_4363_9ec5_7d91f2bfda1e ;
+    rdfs:label "MeanStressFactorUnit" .
+
+:MeanStressFactorValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "MeanStressFactorValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 6.065938e-01 .
+
+:MeanStressFactor_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_78ddc826_66d5_4be3_8eeb_d8b39e02c9d6 ;
+    rdfs:label "MeanStressFactor" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :MeanStressFactorUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :MeanStressFactorValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:MeanStressSensitivityUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a isq:EMMO_a66427d1_9932_4363_9ec5_7d91f2bfda1e ;
+    rdfs:label "MeanStressSensitivityUnit" .
+
+:MeanStressSensitivityValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "MeanStressSensitivityValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 5.9043e-01 .
+
+:MeanStressSensitivity_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_473ac6ab_620f_4195_97ed_23591b27a5ef ;
+    rdfs:label "MeanStressSensitivity" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :MeanStressSensitivityUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :MeanStressSensitivityValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:MeanStressUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_26707f23_c0f3_462a_91d7_5db51cd14cf4 ;
+    rdfs:label "MeanStressUnit" .
+
+:MeanStressValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "MeanStressValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 9.166667e+02 .
+
+:MeanStress_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_13a8ef22_4ade_4c89_af34_0b4c7044517d ;
+    rdfs:label "MeanStress" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :MeanStressUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :MeanStressValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:MinStressUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_26707f23_c0f3_462a_91d7_5db51cd14cf4 ;
+    rdfs:label "MinStressUnit" .
+
+:MinStressValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "MinStressValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.666667e+02 .
+
+:NMIDistanceFromSurfaceUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_baf5bb96_05ea_4f78_bdb7_a556342c8b6a ;
+    rdfs:label "NMIDistanceFromSurfaceUnit" .
+
+:NMIDistanceFromSurfaceValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "NMIDistanceFromSurfaceValue" .
+
+:NMIDistanceFromSurface_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a isq:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+    rdfs:label "NMIDistanceFromSurface" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :NMIDistanceFromSurfaceUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :NMIDistanceFromSurfaceValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:NMIElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "NMIElementChemicalSymbol" .
+
+:NMIElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "NMIElementChemicalSymbol" .
+
+:NMIElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "NMIElementChemicalSymbol" .
+
+:NMIElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "NMIElementChemicalSymbol" .
+
+:NMIElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "NMIElementChemicalSymbol" .
+
+:NMIElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "NMIElementChemicalSymbol" .
+
+:NMIElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "NMIElementChemicalSymbol" .
+
+:NMIElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "NMIElementChemicalSymbol" .
+
+:NMIElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 a chemistry:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:label "NMIElementChemicalSymbol" .
+
+:NMIElements_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 a mechtesting:EMMO_1f213db4_5e4d_45d3_963e_8b7c7693707b ;
+    rdfs:label "NMIElements" ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :NMIElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1 .
+
+:NMIElements_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 a mechtesting:EMMO_1f213db4_5e4d_45d3_963e_8b7c7693707b ;
+    rdfs:label "NMIElements" ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :NMIElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2 .
+
+:NMIElements_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 a mechtesting:EMMO_1f213db4_5e4d_45d3_963e_8b7c7693707b ;
+    rdfs:label "NMIElements" ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :NMIElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3 .
+
+:NMIElements_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 a mechtesting:EMMO_1f213db4_5e4d_45d3_963e_8b7c7693707b ;
+    rdfs:label "NMIElements" ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :NMIElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4 .
+
+:NMIElements_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 a mechtesting:EMMO_1f213db4_5e4d_45d3_963e_8b7c7693707b ;
+    rdfs:label "NMIElements" ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :NMIElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5 .
+
+:NMIElements_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 a mechtesting:EMMO_1f213db4_5e4d_45d3_963e_8b7c7693707b ;
+    rdfs:label "NMIElements" ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :NMIElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6 .
+
+:NMIElements_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 a mechtesting:EMMO_1f213db4_5e4d_45d3_963e_8b7c7693707b ;
+    rdfs:label "NMIElements" ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :NMIElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7 .
+
+:NMIElements_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 a mechtesting:EMMO_1f213db4_5e4d_45d3_963e_8b7c7693707b ;
+    rdfs:label "NMIElements" ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :NMIElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8 .
+
+:NMIElements_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 a mechtesting:EMMO_1f213db4_5e4d_45d3_963e_8b7c7693707b ;
+    rdfs:label "NMIElements" ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :NMIElementChemicalSymbol_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 .
+
+:NMISize_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a isq:EMMO_96f39f77_44dc_491b_8fa7_30d887fe0890 ;
+    rdfs:label "NMISize" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :NMIsizeUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :NMIsizeValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:NMIsizeUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a units-extension:EMMO_b0d1c460_d06b_4c7f_8832_148bc1c8e7dc ;
+    rdfs:label "NMIsizeUnit" .
+
+:NMIsizeValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "NMIsizeValue" .
+
+:NumberOfLoadCyclesUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_0527f1f8_41d4_4414_b1fa_8afbc8651ecb ;
+    rdfs:label "NumberOfLoadCyclesUnit" .
+
+:NumberOfLoadCyclesValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "NumberOfLoadCyclesValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 5.27e+03 .
+
+:NumberOfLoadCycles_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_0527f1f8_41d4_4414_b1fa_8afbc8651ecb ;
+    rdfs:label "NumberOfLoadCycles" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :NumberOfLoadCyclesUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :NumberOfLoadCyclesValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:Reference_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_9b84bd4e_adfa_48b6_b4f7_f597bb40dae1 ;
+    rdfs:label "Reference" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "Höchstfeste Stähle Abschlussbericht, IGF-Vorhaben Nr. 19667 BG"^^xsd:string .
+
+:RetainedAusteniteUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_ac324c09_8830_4b04_bda5_8646a8dee0d4 ;
+    rdfs:label "RetainedAusteniteUnit" .
+
+:RetainedAusteniteValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "RetainedAusteniteValue" .
+
+:RetainedAustenite_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_66f6b324_8190_44d6_a504_0388d74c86be ;
+    rdfs:label "RetainedAustenite" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :RetainedAusteniteUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :RetainedAusteniteValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:RoughnessRzAfterFinishingUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_baf5bb96_05ea_4f78_bdb7_a556342c8b6a ;
+    rdfs:label "RoughnessRzAfterFinishingUnit" .
+
+:RoughnessRzAfterFinishingValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "RoughnessRzAfterFinishingValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1e-01 .
+
+:RoughnessRzAfterFinishing_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_b82033a4_faa1_4f97_8c31_ee9148e120be ;
+    rdfs:label "RoughnessRzAfterFinishing" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :RoughnessRzAfterFinishingUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :RoughnessRzAfterFinishingValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:RoughnessRzAfterRoughingUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_baf5bb96_05ea_4f78_bdb7_a556342c8b6a ;
+    rdfs:label "RoughnessRzAfterRoughingUnit" .
+
+:RoughnessRzAfterRoughingValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "RoughnessRzAfterRoughingValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.6e+00 .
+
+:RoughnessRzAfterRoughing_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_b82033a4_faa1_4f97_8c31_ee9148e120be ;
+    rdfs:label "RoughnessRzAfterRoughing" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :RoughnessRzAfterRoughingUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :RoughnessRzAfterRoughingValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:Rp0.2Unit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_26707f23_c0f3_462a_91d7_5db51cd14cf4 ;
+    rdfs:label "Rp0.2Unit" .
+
+:Rp0.2Value_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "Rp0.2Value" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 2.216e+03 .
+
+:Rp0.2_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_44c9b071_54a1_4366_84e4_b14b055ec633 ;
+    rdfs:label "Rp0.2" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :Rp0.2Unit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :Rp0.2Value_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:SNCurve_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_c4cb32e6_69d4_4807_b781_b1dcc867eef1 ;
+    rdfs:label "SNCurve" ;
+    properties:EMMO_e1097637_70d2_4895_973f_2396f04fa204 :FatigueStrength_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :KneePoint_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :SlopeSNCurve_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:SeriesProperties_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_c0b46f83_fd24_420e_8cda_642fb7bf3e49 ;
+    rdfs:label "SeriesProperties" ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :Reference_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    physical:EMMO_f68030be_94b8_4c61_a161_886468558054 :AlternatingStrength_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :MeanStressFactor_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :MeanStressSensitivity_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :SNCurve_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:SlopeSNCurveUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a isq:EMMO_a66427d1_9932_4363_9ec5_7d91f2bfda1e ;
+    rdfs:label "SlopeSNCurveUnit" .
+
+:SlopeSNCurveValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "SlopeSNCurveValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1.06724e+01 .
+
+:SlopeSNCurve_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_01751749_c384_4a73_b1f1_291447712a92 ;
+    rdfs:label "SlopeSNCurve" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :SlopeSNCurveUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :SlopeSNCurveValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:SpecimenLengthUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_959181b4_1765_4fee_8ca7_139d4728b2a5 ;
+    rdfs:label "SpecimenLengthUnit" .
+
+:SpecimenLengthValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "SpecimenLengthValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 5.52e+00 .
+
+:SpecimenLength_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a isq:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+    rdfs:label "SpecimenLength" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :SpecimenLengthUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :SpecimenLengthValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:StressAmplitudeUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_26707f23_c0f3_462a_91d7_5db51cd14cf4 ;
+    rdfs:label "StressAmplitudeUnit" .
+
+:StressAmplitudeValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "StressAmplitudeValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 7.5e+02 .
+
+:StressAmplitude_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_a5fb2228_53f8_4d1a_a929_ae166b9ea7ac ;
+    rdfs:label "StressAmplitude" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :StressAmplitudeUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :StressAmplitudeValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:StressConcentrationFactorUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a isq:EMMO_a66427d1_9932_4363_9ec5_7d91f2bfda1e ;
+    rdfs:label "StressConcentrationFactorUnit" .
+
+:StressConcentrationFactorValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "StressConcentrationFactorValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1e+00 .
+
+:StressConcentrationFactor_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_68ee637e_eee7_4edc_ab24_1fe4135fb71c ;
+    rdfs:label "StressConcentrationFactor" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :StressConcentrationFactorUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :StressConcentrationFactorValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:StressRatioRUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a isq:EMMO_a66427d1_9932_4363_9ec5_7d91f2bfda1e ;
+    rdfs:label "StressRatioRUnit" .
+
+:StressRatioRValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "StressRatioRValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 1e-01 .
+
+:StressRatioR_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_6294b181_baf5_460a_9880_7f183bba9aae ;
+    rdfs:label "StressRatioR" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :StressRatioRUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :StressRatioRValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:SurfaceFailure_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_71f86460_7451_43be_9e29_bb653724e231 ;
+    rdfs:label "SurfaceFailure" .
+
+:SurfaceHardnessUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_bd59ce5c_09a5_4912_961b_91cfbbd087f2 ;
+    rdfs:label "SurfaceHardnessUnit" .
+
+:SurfaceHardnessValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "SurfaceHardnessValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 7.047e+02 .
+
+:SurfaceHardness_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_3b07c236_fcaa_4d7f_9b2b_b59e247a1922 ;
+    rdfs:label "SurfaceHardness" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :SurfaceHardnessUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :SurfaceHardnessValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:TangentialResidualStressUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_26707f23_c0f3_462a_91d7_5db51cd14cf4 ;
+    rdfs:label "TangentialResidualStressUnit" .
+
+:TangentialResidualStressValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "TangentialResidualStressValue" .
+
+:TangentialResidualStress_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_142c4b97_9011_4608_849b_08d1fdd642ce ;
+    rdfs:label "TangentialResidualStress" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :TangentialResidualStressUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :TangentialResidualStressValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:TensileStrengthUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_26707f23_c0f3_462a_91d7_5db51cd14cf4 ;
+    rdfs:label "TensileStrengthUnit" .
+
+:TensileStrengthValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "TensileStrengthValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 2.437e+03 .
+
+:TensileStrength_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_926d14c7_4f78_4c37_99b4_dfb0a531db64 ;
+    rdfs:label "TensileStrength" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :TensileStrengthUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :TensileStrengthValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:TensionCompression_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_40c2449f_3a12_4c31_bb87_895e24ebb8a8 ;
+    rdfs:label "TensionCompression" .
+
+:TestEnvironment_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_a11352bc_9b81_4c0c_92e8_f47ea2c5c68b ;
+    rdfs:label "TestEnvironment" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "air"^^xsd:string .
+
+:TestParameterSet_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_c141a264_e73e_49a9_bc16_9c77b8e856bf ;
+    rdfs:label "TestParameterSet" ;
+    physical:EMMO_f68030be_94b8_4c61_a161_886468558054 :CycleLimit_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :LoadingType_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :MeanStress_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :StressAmplitude_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :StressRatioR_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :TestEnvironment_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :TestTemperature_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :TestingFrequency_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :s_max_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :s_min_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:TestTemperatureUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a siunits:EMMO_b20be325_8bfd_4237_bee7_201ab0fd9c75 ;
+    rdfs:label "TestTemperatureUnit" .
+
+:TestTemperatureValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "TestTemperatureValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 2e+01 .
+
+:TestTemperature_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a isq:EMMO_66bc9029_f473_45ff_bab9_c3509ff37a22 ;
+    rdfs:label "TestTemperature" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :TestTemperatureUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :TestTemperatureValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:TestingFrequency_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a isq:EMMO_852b4ab8_fc29_4749_a8c7_b92d4fca7d5a ;
+    rdfs:label "TestingFrequency" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :FrequencyUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :FrequencyValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:UnnotchedSpecimen_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_21d06317_5b59_4940_8d02_804279fe07ad ;
+    rdfs:label "UnnotchedSpecimen" .
+
+:YoungsModulusUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_26707f23_c0f3_462a_91d7_5db51cd14cf4 ;
+    rdfs:label "YoungsModulusUnit" .
+
+:YoungsModulusValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a math:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
+    rdfs:label "YoungsModulusValue" ;
+    math:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 2.21e+05 .
+
+:YoungsModulus_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_7dc73553_7d3f_4dc2_bb7b_f47775207457 ;
+    rdfs:label "YoungsModulus" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :YoungsModulusUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :YoungsModulusValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:s_max_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_4136ef18_9624_4f92_b556_c9295b088806 ;
+    rdfs:label "s_max" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :MaxStressUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :MaxStressValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:s_min_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_d87db143_a9d9_4fe4_a61b_05ea26355783 ;
+    rdfs:label "s_min" ;
+    metrology:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 :MinStressUnit_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    metrology:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 :MinStressValue_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:ChemicalCompositionAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a chemistry:EMMO_7efd64d1_05a1_49cd_a7f0_783ca050d4f3 ;
+    rdfs:label "ChemicalCompositionAfterHardening" ;
+    physical:EMMO_f68030be_94b8_4c61_a161_886468558054 :CEVAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_1,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_10,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_11,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_12,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_13,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_14,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_15,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_16,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_17,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_18,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_19,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_2,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_20,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_21,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_22,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_23,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_24,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_25,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_26,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_27,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_28,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_29,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_3,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_4,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_5,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_6,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_7,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_8,
+        :CompositionElementAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713_9 .
+
+:FatigueTesting_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_23273603_7ee7_4012_a0bb_d484433083de ;
+    rdfs:label "FatigueTesting" ;
+    emmo:EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d :Fractography_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    mechtesting:EMMO_a079cf37_e495_41f1_af01_d544e886eacb :FatigueTestResult_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :SeriesProperties_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :SpecimenAfterFatigueTesting_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    mechtesting:EMMO_dc4c5477_e02e_40ac_b5a4_0d4e8e36c74d :SpecimenAfterMachining_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :TestParameterSet_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:Fractography_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_8fb5442e_d864_4d85_aad1_8d638f6a5fd3 ;
+    rdfs:label "Fractography" ;
+    mechtesting:EMMO_a079cf37_e495_41f1_af01_d544e886eacb :FractographyResults_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :SpecimenAfterFractography_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    mechtesting:EMMO_dc4c5477_e02e_40ac_b5a4_0d4e8e36c74d :SpecimenAfterFatigueTesting_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:Hardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_4c57e181_8205_4e51_a164_d17c4bea891d ;
+    rdfs:label "Hardening" ;
+    emmo:EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d :Machining_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    mechtesting:EMMO_a079cf37_e495_41f1_af01_d544e886eacb :MaterialAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    mechtesting:EMMO_dc4c5477_e02e_40ac_b5a4_0d4e8e36c74d :MaterialAfterMetallurgy_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:InitialMaterial_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a manufacturing:EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356 ;
+    rdfs:label "InitialMaterial" ;
+    properties:EMMO_e1097637_70d2_4895_973f_2396f04fa204 :InitialChemicalComposition_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:Machining_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_87286423_f048_47ac_b8df_3235e824f277 ;
+    rdfs:label "Machining" ;
+    emmo:EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d :FatigueTesting_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    emmo:EMMO_c0f48dc6_4a32_4d9a_a956_d68415954a8e :Polishing_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    emmo:EMMO_fe63194f_7c04_4dbd_a244_524b38b6699b :MicroWireErosion_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    holistic:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a :MicroWireErosion_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :Polishing_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:MaterialNumber_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_1481b773_15d8_4f1a_bf37_3a704958c9d3 ;
+    rdfs:label "MaterialNumber" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "1.3505"^^xsd:string .
+
+:Metallurgy_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_8e959570_c1a5_436f_bc54_08b423f4568d ;
+    rdfs:label "Metallurgy" ;
+    emmo:EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d :Hardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    mechtesting:EMMO_a079cf37_e495_41f1_af01_d544e886eacb :MaterialAfterMetallurgy_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    mechtesting:EMMO_dc4c5477_e02e_40ac_b5a4_0d4e8e36c74d :InitialMaterial_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:MicroWireErosion_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_cfc07446_bcc0_4697_b854_f9ec00240297 ;
+    rdfs:label "MicroWireErosion" ;
+    emmo:EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d :Polishing_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    mechtesting:EMMO_a079cf37_e495_41f1_af01_d544e886eacb :SpecimenAfterRoughing_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    mechtesting:EMMO_dc4c5477_e02e_40ac_b5a4_0d4e8e36c74d :MaterialAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:ShortName_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a physicalistic:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 ;
+    rdfs:label "ShortName" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "100Cr6 - HFS"^^xsd:string .
+
+:SpecimenAfterFractography_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e ;
+    rdfs:label "SpecimenAfterFractography" ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :specimenID_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:SpecimenAfterMachining_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e ;
+    rdfs:label "SpecimenAfterMachining" ;
+    properties:EMMO_e1097637_70d2_4895_973f_2396f04fa204 :ChemicalCompositionAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :Diameter_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :FlatSpecimen_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :RoughnessRzAfterFinishing_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :SpecimenLength_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :StressConcentrationFactor_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :UnnotchedSpecimen_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    reductionistic:EMMO_65a2c5b8_e4d8_4a51_b2f8_e55effc0547d :SpecimenAfterFatigueTesting_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :SpecimenAfterFractography_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :specimenID_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:SpecimenAfterRoughing_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e ;
+    rdfs:label "SpecimenAfterRoughing" ;
+    properties:EMMO_e1097637_70d2_4895_973f_2396f04fa204 :RoughnessRzAfterRoughing_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :specimenID_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:MaterialAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a manufacturing:EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356 ;
+    rdfs:label "MaterialAfterHardening" ;
+    properties:EMMO_e1097637_70d2_4895_973f_2396f04fa204 :ChemicalCompositionAfterHardening_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :FractureStrain_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :MartensiticMicrostructure_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :RetainedAustenite_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :Rp0.2_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :SurfaceHardness_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :TensileStrength_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :YoungsModulus_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :MaterialNumber_37e9fe6d-2a7e-4f78-9781-867e1ba97713,
+        :ShortName_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:MaterialAfterMetallurgy_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a manufacturing:EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356 ;
+    rdfs:label "MaterialAfterMetallurgy" ;
+    properties:EMMO_e1097637_70d2_4895_973f_2396f04fa204 :ChemicalCompositionAfterDeoxidization_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:Polishing_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_81c57565_463f_4281_bd64_59eb7a56c952 ;
+    rdfs:label "Polishing" ;
+    mechtesting:EMMO_a079cf37_e495_41f1_af01_d544e886eacb :SpecimenAfterMachining_37e9fe6d-2a7e-4f78-9781-867e1ba97713 ;
+    mechtesting:EMMO_dc4c5477_e02e_40ac_b5a4_0d4e8e36c74d :SpecimenAfterRoughing_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:SpecimenAfterFatigueTesting_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e ;
+    rdfs:label "SpecimenAfterFatigueTesting" ;
+    semiotics:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 :specimenID_37e9fe6d-2a7e-4f78-9781-867e1ba97713 .
+
+:specimenID_37e9fe6d-2a7e-4f78-9781-867e1ba97713 a mechtesting:EMMO_4d5b1eee_cda4_4bc7_8a0e_612fcf7f0c82 ;
+    rdfs:label "specimenID" ;
+    perceptual:EMMO_23b579e1_8088_45b5_9975_064014026c42 "1434"^^xsd:string .
+
