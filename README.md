@@ -21,8 +21,8 @@ In addition, we provide exemplary SPARQL queries for filtering and reasoning in 
 
 ## Licenses
 There are different licenses for each folder: 
-- "*data_knowledge_graph*" and "*supplementary_material*" are published under **CC-BY-SA-4.0**.
-- "*code*" is published under **MIT License**.
+- "*data_knowledge_graph*" and "*supplementary_material*" are licensed under **CC-BY-SA-4.0**.
+- "*code*" is licensed under the **MIT License**.
 
 ## Citation
 *Sascha Fliegener, Johannes Rosenberger, Michael Luke, José Manuel Domínguez, Joana Francisco Morgado, Hans-Ulrich Kobialka, Torsten Kraft, Johannes Tlatlik*
