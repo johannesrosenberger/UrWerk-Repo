@@ -27,7 +27,7 @@ There are different licenses for each folder:
 ## Citation
 *Sascha Fliegener, Johannes Rosenberger, Michael Luke, José Manuel Domínguez, Joana Francisco Morgado, Hans-Ulrich Kobialka, Torsten Kraft, Johannes Tlatlik*
 
-*Digital methods for the lifetime assessment of engineering steels*
+*Digital Methods for the Fatigue Assessment of Engineering Steels*
 
 *Advanced Engineering Materials Volume... Issue...*
 
@@ -37,7 +37,7 @@ There are different licenses for each folder:
 
 *pages...*
 
-*DOI...*
+*DOI: 10.1002/adem.202400992*
 
 ## Plattform Material Digital
 ![Logo_Material_Digital](https://raw.githubusercontent.com/johannesrosenberger/UrWerk-Repo/5ac81ea5eee91692d521fab6ad8ec5f9759e52dd/supplementary_material/Logo_MaterialDigital.svg)
