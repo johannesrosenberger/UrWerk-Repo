@@ -29,13 +29,11 @@ There are different licenses for each folder:
 
 *Digital Methods for the Fatigue Assessment of Engineering Steels*
 
-*Advanced Engineering Materials Volume... Issue...*
+*Advanced Engineering Materials 2024 2400992*
 
 *Special Issue Digitalization in Materials Science and Engineering*
 
 *2024*
-
-*pages...*
 
 *DOI: 10.1002/adem.202400992*
 
