@@ -33,7 +33,7 @@ There are different licenses for each folder:
 
 *Special Issue Digitalization in Materials Science and Engineering*
 
-*2024*
+*August 2024*
 
 *DOI: 10.1002/adem.202400992*
 
